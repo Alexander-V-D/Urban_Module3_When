@@ -1,4 +1,5 @@
 fun main() {
+
     //Задача 1
     val month = 5
     val months = listOf(
@@ -15,12 +16,14 @@ fun main() {
         12 -> "Зима: ${months[month - 1]}."
         else -> "Неверное значение."
     })
+
     //Задача 2
     val numberWithFloatingDot = 3.7
     println("Ответ к задаче 2: ${when(numberWithFloatingDot - numberWithFloatingDot.toInt()) {
         in 0.0..0.5 -> numberWithFloatingDot.toInt()
         else -> numberWithFloatingDot.toInt() + 1
     }}")
+
     //Задача 3
     val hour = 22
     println("Ответ к задаче 3: ${when (hour) {
@@ -31,6 +34,7 @@ fun main() {
         in 21..23 -> "Ночь"
         else -> "Неверное значение"
     }}")
+
     //Задача 4
     var a = 8
     var b = 5
