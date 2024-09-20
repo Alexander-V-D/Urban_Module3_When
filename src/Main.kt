@@ -8,14 +8,14 @@ fun main() {
         "Июль", "Август", "Сентябрь",
         "Октябрь", "Ноябрь", "Декабрь"
     )
-    println(when (month) {
+    println("Ответ к задаче 1: ${when (month) {
         in 1..2 -> "Зима: ${months[month - 1]}."
         in 3..5 -> "Весна: ${months[month - 1]}."
         in 6..8 -> "Лето: ${months[month - 1]}."
         in 9..11 -> "Осень: ${months[month - 1]}."
         12 -> "Зима: ${months[month - 1]}."
         else -> "Неверное значение."
-    })
+    }}")
 
     //Задача 2
     val numberWithFloatingDot = 3.7
